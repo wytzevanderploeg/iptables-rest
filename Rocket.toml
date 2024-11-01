@@ -1,0 +1,4 @@
+[production]
+# Change to "0.0.0.0" to bind on all interfaces.
+# Since there is no security in place right now this might be quite dangerous.
+address = "127.0.0.1"

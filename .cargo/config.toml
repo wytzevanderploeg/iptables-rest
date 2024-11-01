@@ -1,0 +1,13 @@
+# @see: https://doc.rust-lang.org/nightly/rustc/platform-support.html
+# [build]
+# target = ["x86_64-unknown-linux-gnu", "armv7-unknown-linux-musleabi"]
+
+# Tier 1
+[target.x86_64-unknown-linux-gnu]
+# Run with elevated privileges (for debugging), preserve environment
+runner = "sudo -E"
+
+# Tier 2 without host tools
+[target.armv7-unknown-linux-musleabi]
+# linker = "armv7-unknown-linux-musleabi-gcc"
+linker = "rust-lld"

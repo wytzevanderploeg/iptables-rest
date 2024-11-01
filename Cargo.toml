@@ -1,0 +1,11 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "iptables-rest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iptables = "0.5.2"
+pnet = "0.35.0"
+rocket = { version = "0.5.1", features = ["json"] }
